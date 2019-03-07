@@ -1488,11 +1488,11 @@ advApp.controller('advController', ['$document', '$filter', '$scope', function($
       ['Super Bro Dolls', 0, false, 0, 0, 0, 0],
       ['Roast Beast', 0, false, 0, 0, 0, 0]
     ];
-    $scope.cashalot.angelScale = 1.0; // ?
+    $scope.cashalot.angelScale = 1.0;
     $scope.cashalot.baseCost = [27.272727, 30000, 200000, 9e+9, 35e+9, 1200e+9, 250e+12, 144e+15, 110e+18];
-    $scope.cashalot.basePower = [1.1, 1.1, 1.1, 1.1, 1.1, 1.0, 1.0, 1.0, 1.0]; // 0-4
-    $scope.cashalot.baseProfit = [10, 1000, 20000, 40e+6, 2.5e+9, 1, 1, 1, 1]; // 0-4
-    $scope.cashalot.baseSpeed = [2, 3, 4, 5, 6, 60, 70, 80, 90]; // 0-4
+    $scope.cashalot.basePower = [1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1, 1.1];
+    $scope.cashalot.baseProfit = [10, 1000, 20000, 40e+6, 2.5e+9, 16e+9, 17.5e+12, 75e+15, 425e+15];
+    $scope.cashalot.baseSpeed = [2, 3, 4, 5, 6, 7, 9, 10, 12];
     $scope.cashalot.investments = [
       ['Pimp Thy Steed', 1, false, 0, 0, 0, 0],
       ['Tapestry Selfie Boots', 0, false, 0, 0, 0, 0],
@@ -1945,17 +1945,17 @@ advApp.controller('advController', ['$document', '$filter', '$scope', function($
     $scope.carol.cashUpgrades = [[500, [0, 5], false],[5e+7, [0, 555], false],[5e+10, [2, 55], false],[5e+11, [0, 555], false],[1e+12, [2, 555], false],[5e+12, [4, 55], false],[5e+13, [0, 5], false],[5e+14, [2, 5], false],[5e+16, [4, 55], false],[1e+17, [6, 5], false],[1e+18, [0, 55], false],[1e+20, [2, 55], false],[1e+22, [4, 55], false],[1e+23, [6, 55], false],[1e+23, [8, 5], false],[5e+24, [0, 55], false],[1e+26, [2, 55], false],[5e+26, [4, 5], false],[1e+28, [6, 55], false],[5e+28, [8, 55], false],[1e+29, [10, 5], false],[5e+29, [0, 5], false],[1e+31, [2, 5], false],[5e+31, [4, 55], false],[1e+32, [6, 5], false],[5e+33, [8, 55], false],[1e+34, [10, 55], false],[5e+34, [12, 5], false],[1e+35, [0, 55], false],[1e+37, [2, 55], false],[5e+38, [4, 55], false],[1e+39, [6, 55], false],[5e+40, [8, 5], false],[1e+41, [10, 55], false],[5e+42, [12, 55], false],[1e+43, [14, 5], false],[5e+46, [0, 55], false],[1e+47, [2, 55], false],[5e+47, [4, 5], false],[1e+49, [6, 55], false],[5e+49, [8, 55], false],[1e+50, [10, 5], false],[5e+50, [12, 55], false],[1e+51, [14, 55], false],[5e+51, [16, 55], false],[7.7777e+52, [18, 777], false],[5e+62, [18, 777], false],[5e+69, [18, 777], false],[5e+74, [18, 777], false],[5e+79, [18, 777], false],[5e+85, [18, 777], false],[5e+92, [18, 777], false],[5e+97, [18, 777], false],[5e+104, [18, 777], false],[5e+113, [18, 777], false],[5e+117, [18, 777], false]];
     $scope.carol.angelUpgrades = [[1e+21, [18, 3], false, false]];
     $scope.carol.managerUpgrades = [];
-    $scope.cashalot.unlocks[0] = [[50, [0, 3]], [100, [2, 11]], [125, [2, 5]], [777, [18, 2]]];
-    $scope.cashalot.unlocks[1] = [[25, [4, 2.5]], [75, [4, 5]], [400, [0, 6666]]];
-    $scope.cashalot.unlocks[2] = [[75, [6, 11]], [100, [6, 7]], [256, [2, 4444]]];
-    $scope.cashalot.unlocks[3] = [[10, [8, 2]], [25, [8, 5]]];
-    $scope.cashalot.unlocks[4] = [[30, [10, 2]]];
-    $scope.cashalot.unlocks[5] = [];
-    $scope.cashalot.unlocks[6] = [];
-    $scope.cashalot.unlocks[7] = [];
-    $scope.cashalot.unlocks[8] = [];
-    $scope.cashalot.unlocks[9] = [];
-    $scope.cashalot.cashUpgrades = [[50000, [0, 5], false], [100000, [0, 8], false], [250e+6, [0, 12], false]];
+    $scope.cashalot.unlocks[0] = [[50, [0, 3]], [100, [2, 11]], [125, [2, 5]], [777, [18, 2]], [825, [2, 3]]];
+    $scope.cashalot.unlocks[1] = [[25, [4, 2.5]], [75, [4, 5]], [400, [0, 6666]], [500, [0, 7777]]];
+    $scope.cashalot.unlocks[2] = [[75, [6, 11]], [100, [6, 7]], [256, [2, 4444]], [368, [2, 5555]]];
+    $scope.cashalot.unlocks[3] = [[10, [8, 2]], [25, [8, 5]], [250, [4, 2222]], [325, [4, 3333]]];
+    $scope.cashalot.unlocks[4] = [[30, [10, 2]], [45, [10, 5]], [225, [6, 1111]], [350, [6, 2222]]];
+    $scope.cashalot.unlocks[5] = [[40, [12, 9]], [80, [12, 17]], [250, [8, 777]], [325, [8, 888]]];
+    $scope.cashalot.unlocks[6] = [[60, [14, 1.5]], [100, [14, 2.5]], [275, [10, 6666]], [325, [10, 9999]]];
+    $scope.cashalot.unlocks[7] = [[50, [16, 2.5]], [80, [16, 4]], [185, [12, 40]], [225, [12, 80]]];
+    $scope.cashalot.unlocks[8] = [[125, [14, 15]], [550, [16, 2]]];
+    $scope.cashalot.unlocks[9] = [[333, [18, 2]]];
+    $scope.cashalot.cashUpgrades = [[50000, [0, 5], false], [100000, [0, 8], false], [250e+6, [0, 12], false], [1e+24, [18, 2], false], [500e+24, [18, 2], false]];
     $scope.cashalot.angelUpgrades = [];
     $scope.cashalot.managerUpgrades = [];
     $scope.cashella.unlocks[0] = [[240, [18, 6.66]],   [1100, [18, 3]],   [2200, [18, 5]]];
